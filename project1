@@ -1,0 +1,24 @@
+#include<iostream>;
+using namespace std;
+int main()
+{
+ cout << "\aEnter a latitude in degrees,minutes,and seconds:\n";
+ double degrees,minutes,seconds;
+ 
+ cout << "\aFirst,enter the degrees:";
+ cin >>degrees;
+ cout << "\aNext,enter the minutes of the arc:" ;
+ cin >> minutes;
+ cout << "\aFinally,enter the second of the arc:" ;
+ cin >> seconds;
+
+ cout << degrees << "\adegrees," << minutes << "minuuutes," << seconds << "seconds=";
+
+ minutes = minutes / 60;
+ seconds = seconds / 3600;
+ degrees = degrees + minutes + seconds;
+ cout << degrees << "degrees.";
+
+ system("pause");
+
+}
